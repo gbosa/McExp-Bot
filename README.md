@@ -1,10 +1,10 @@
 # McExp-Bot
 
-====== MC EXPERIENCE TELEGRAM BOT ======
-
 This bot was created to automatize the process of 
 filling a web formular to create a 50% off cupom
 for McDonalds Ice Cream (Yummy!).
+
+
 
 How it works?
 
