@@ -4,8 +4,9 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.service import Service
 from time import sleep
+from BotCredentials import bot_cred, cnpj
 
-bot = telebot.TeleBot('5667849649:AAEtmXI-tVLr3uidK2T_dYovks7N5NFYhdQ')
+bot = telebot.TeleBot(bot_cred)
 
 def mcexp():
     chrservice = Service(r'C:\Program Files (x86)\ChromeDriver\chromedriver.exe')
@@ -14,7 +15,7 @@ def mcexp():
     driver.get('https://mcexperienciasurvey.com/bra');
 
     elem = driver.find_element(By.ID, "InputCNPJ")
-    elem.send_keys('42.591.651/1704-99')
+    elem.send_keys(cnpj)
 
     button = driver.find_element(By.CLASS_NAME, "ui-datepicker-trigger")
     button.click()
